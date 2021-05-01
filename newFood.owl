@@ -1,0 +1,676 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#"
+     xml:base="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#EstCompose -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#EstCompose">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Plat"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#EstCompose"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#EstUnEnsemble -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#EstUnEnsemble">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Repas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#appartient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#appartient">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#appartient"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Aliment"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#apporte -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#apporte">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#apporte"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Aliment"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#contient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#contient">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#contient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#TypeAliment"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#CaracteristiqueAliment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#CaracteristiqueAliment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Aliment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#descriptionRepas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#descriptionRepas">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Repas"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#idAliment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#idAliment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Aliment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#idRepas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#idRepas">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Repas"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#libelleAliment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#libelleAliment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Aliment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#libelleRepas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#libelleRepas">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Repas"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Aliment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Aliment">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#apporte"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#TypeSubstanceOrganique"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#appartient"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#TypeAliment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Boisson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Boisson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#TypeAliment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Calcium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Calcium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Eau -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Eau">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#TypeSubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Fer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Fer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Fibres -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Fibres">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#TypeSubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Glucides -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Glucides">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#TypeSubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#LegumeFruit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#LegumeFruit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#TypeAliment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Lipides -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Lipides">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#TypeSubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#MacroElementMIneraux -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#MacroElementMIneraux">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#TypeSubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Magnesium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Magnesium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#MatiereGrasses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#MatiereGrasses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#TypeAliment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#OligoElementMIneraux -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#OligoElementMIneraux">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#TypeSubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#PainCereale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#PainCereale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#TypeAliment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Phosphore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Phosphore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Plat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Plat">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#EstCompose"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Aliment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Potassium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Potassium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#ProduitLaitiers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#ProduitLaitiers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#TypeAliment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#ProduitSucres -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#ProduitSucres">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#TypeAliment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#ProteineAnimale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#ProteineAnimale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#ProteineVegetale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#ProteineVegetale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Protides -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Protides">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#TypeSubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Repas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Repas">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#EstUnEnsemble"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Plat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#appartient"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#TypeSubstanceOrganique"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#TypeAliment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#TypeAliment">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#contient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Aliment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#TypeSubstanceOrganique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#TypeSubstanceOrganique">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#EstCompose"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#ViandeProduitPecheOeuf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#ViandeProduitPecheOeuf">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#TypeAliment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineB1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineB1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineB10 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineB10">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineB11 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineB11">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineB2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineB2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineB3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineB3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineB4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineB4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineB5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineB5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineB6 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineB6">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineB7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineB7">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineB8 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineB8">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineB9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineB9">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineK -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineK">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitamineP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitaminesHydrosoluble -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitaminesHydrosoluble">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#TypeSubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitaminesLiposolubles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#VitaminesLiposolubles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#TypeSubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Ail -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Ail">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Aliment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Basilic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Basilic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Aliment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Oignon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Oignon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Aliment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#PoivreBlanc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#PoivreBlanc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Aliment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Poivron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Poivron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Aliment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Riz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Riz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Aliment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#RizParfume -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#RizParfume"/>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SauceTomatePoisson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#SauceTomatePoisson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Plat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#poisson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#poisson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Aliment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#sel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#sel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Aliment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#tomato -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#tomato">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/untitled-ontology-18#Aliment"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

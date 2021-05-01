@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#"
+     xml:base="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#Aliment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#Aliment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#Boisson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#Boisson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#TypeAliment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#Eau -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#Eau">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#TypeSubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#Fibres -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#Fibres">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#TypeSubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#FruitLegumes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#FruitLegumes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#TypeAliment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#Glucides -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#Glucides">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#TypeSubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#Lipides -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#Lipides">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#TypeSubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#MacroelementsMineraux -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#MacroelementsMineraux">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#TypeSubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#MatieresGrasses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#MatieresGrasses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#TypeAliment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#OligoélémentsMinéraux -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#OligoélémentsMinéraux">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#TypeSubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#PainCereales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#PainCereales">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#TypeAliment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#ProduitLaitiers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#ProduitLaitiers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#TypeAliment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#ProduitSucres -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#ProduitSucres">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#TypeAliment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#Protides -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#Protides">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#TypeSubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#Repas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#Repas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#SubstanceOrganique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#SubstanceOrganique"/>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#TypeAliment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#TypeAliment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#TypeSubstanceOrganique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#TypeSubstanceOrganique"/>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#ViandesOeufPeche -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#ViandesOeufPeche">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#TypeAliment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#VitaminesHydrosolubles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#VitaminesHydrosolubles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#TypeSubstanceOrganique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#Vitamines_Liposolubles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#Vitamines_Liposolubles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/3/untitled-ontology-13#TypeSubstanceOrganique"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

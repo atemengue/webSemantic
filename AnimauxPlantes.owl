@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#"
+     xml:base="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#mange -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#mange">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#mangePar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Animal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#mangePar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#mangePar"/>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#partieDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#partieDe">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Animal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Animal">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Plante"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Arbre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Arbre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Plante"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Branche -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Branche">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#partieDe"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Arbre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Carnivore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Carnivore">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Animal"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#mange"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Animal"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Feuille -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Feuille">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#partieDe"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Branche"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Girafe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Girafe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Herbivore"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#mange"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Feuille"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Herbivore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Herbivore">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Animal"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#mange"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Plante"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#partieDe"/>
+                                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Plante"/>
+                                    </owl:Restriction>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Loin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Loin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Carnivore"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#mange"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Herbivore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Plante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Plante"/>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#PlanteSavoureuse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#PlanteSavoureuse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Plante"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#mange"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Herbivore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#mangePar"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Carnivore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Une planteSavoureuse est une plante qui est mangee par un Herbivore et aussi un Carnivore</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Leo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Leo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Loin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Olivier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Olivier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Arbre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Sophie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Sophie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atemengue/ontologies/2021/4/AnimauxPlantes.owl#Girafe"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
